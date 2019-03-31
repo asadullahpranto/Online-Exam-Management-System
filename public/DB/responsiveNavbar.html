@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+	<link rel="stylesheet" type="text/css" href="responsiveNavbar.css">
+	<script type="text/javascript" src="js/bootstrapjquery.js"></script>
+	<script type="text/javascript" src="js/popper.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+
+	<title>Exam Management System</title>
+	<link rel="icon" type="icon" href="icon/icon.png">
+</head>
+
+<body style="background-color: #202a3f;">
+
+	<div class="container"><hr>
+
+		<nav class="navbar navbar-expand-md navbar-light bg-success rounded">
+
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#target">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<a class="navbar-brand" href="home.html"><img src="icon/icon.png" style="height: 40px;"></a>
+
+			<div class="collapse navbar-collapse" id="target">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item">
+						<a href="#" class="nav-link btn-outline-info rounded text-white pr-3">HOME</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="about.html" class="nav-link btn-outline-info rounded text-white pr-3">ABOUT</a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white" data-toggle="dropdown" data-target="dropdown_target pr-3">EXAM SCHEDULE</a>
+
+						<div class="dropdown-menu bg-info" aria-labelledby="dropdown_target">
+							<a class="dropdown-item text-white" href="upcomingExam.html">UPCOMING EXAM</a>
+							<a class="dropdown-item text-white" href="ongoingExam.html">ONGOING EXAM</a>
+							<a class="dropdown-item text-white" href="previousExam.html">PREVIOUS EXAM</a>
+							
+						</div>
+
+					</li>
+
+					<li class="nav-item">
+						<a href="#" class="nav-link btn-outline-info rounded text-white pr-3">NOTICE BOARD</a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white" data-toggle="dropdown" data-target="dropdown_target pr-3">CONTACT US</a>
+
+						<div class="dropdown-menu bg-info" aria-labelledby="dropdown_target">
+							<a href="#" class="dropdown-item text-white">Via Email</a>
+							<a href="#" class="dropdown-item text-white">Via Messenger</a>
+							<a href="#" class="dropdown-item text-white">Via Phone Call</a>
+						</div>
+
+					</li>
+
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle btn-outline-info rounded text-white pr-3" data-toggle="dropdown">SIGNUP</a>
+
+						<div class="dropdown-menu bg-info divide">
+							<a href="teacher.html" class="dropdown-item text-white">Teacher</a>
+							<a href="student.html" class="dropdown-item text-white">Student</a>
+						</div>
+					</li>
+
+					<!--Login Disabled
+
+					<li class="nav-item">
+						<a href="#" class="nav-link btn-outline-info rounded text-white pr-4"><i class="fas fa-sign-in-alt"></i> LOGIN</a>
+					</li> -->
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<!-- Search Box -->
+					<form>
+						<div class="input-group">
+							<input class="form-control" type="text" name="search" placeholder="Search">
+							<div class="input-group-btn">
+								<button class="btn btn-info" style="width: 50px;" type="submit"><i class="fas fa-search"></i></button>	
+							</div>
+						</div>
+					</form>
+					<!--End-->
+				</ul>
+			</div>
+			
+		</nav>
+		<hr style="border-color: mediumseagreen;">
+
+		
+
+		<div class="row mt-5 mb-5">
+
+			<!--CARDS -->
+			
+            <div class="col-md-7 col-sm-2 ">
+            	
+            	<div class="card-deck">
+            		<!--Upcoming Exam Cards-->
+            		<div class="card " style="width: 15rem; background-color: #fbc02d;">
+						<img class="card-img-top ml-5" src="icon/icon.png" style="height: 100px; width: 100px;" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</div>
+
+					<!--Ongoing Exam Cards-->
+            		<div class="card" style="width: 15rem; background-color: #80deea;">
+						<img class="card-img-top ml-5" src="icon/icon.png" style="height: 100px; width: 100px;" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</div>
+		
+					<!-- CARDS Ends -->
+            	</div>
+
+            	<div class="card-deck pt-3">
+            		<!--Upcoming Exam Cards-->
+            		<div class="card" style="width: 15rem; background-color: #80deea;">
+						<img class="card-img-top ml-5" src="icon/icon.png" style="height: 100px; width: 100px;" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</div>
+
+					<!--Ongoing Exam Cards-->
+            		<div class="card" style="width: 15rem; background-color: #fbc02d;">
+						<img class="card-img-top ml-5" src="icon/icon.png" style="height: 100px; width: 100px;" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</div>
+		
+					<!-- CARDS Ends -->
+            	</div>
+
+			</div>
+
+			<!--Login Starts -->
+
+            <div class="col-md-5 col-sm-8 mt-5">
+                <form class="form-container">
+
+
+                    <h2 class="text-success text-uppercase text-center">
+                    	<img class="pb-2 pr-2" src="icon/icon.png" style="height: 40px;"> Login
+                    </h2>
+
+	                <div class="form-group">
+	                    <label for="exampleInputEmail1" class="text-success">Email</label>
+	                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+	                </div>
+
+	                <div class="form-group">
+	                    <label for="exampleInputPassword1" class="text-success">Password</label>
+	                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+	                </div>
+
+	                <div class="checkbox">
+	                   <label class="text-success">
+	                    	<input type="checkbox"> Remember Me
+	                   </label>
+	                </div>
+
+                  <button type="submit" class="btn btn-success btn-block"><a href="studentDash.html">Submit</a></button>
+                </form>
+            </div>
+
+            <div class="col-md-0 col-sm-2 "></div>
+        </div>
+
+        <!--Login End-->
+
+	</div>
+
+	<!--Footer-->
+	<div class="container my-4 ">
+		<hr style="border-color: mediumseagreen;">
+		<div class="footer">
+			<ul class="nav nav-pills nav-fill bg-success rounded">
+				<li class="nav-item">
+					<a href="#" class="nav-link text-white btn-outline-info"><i class="fab fa-connectdevelop"></i> Developers</a>
+				</li>
+				<li class="nav-item">
+					<a href="copyright.html" class="nav-link text-white btn-outline-info"><i class="far fa-copyright"></i> Copyright</a>
+				</li>
+				<li class="nav-item">
+					<a href="privacy.html" class="nav-link text-white btn-outline-info"><i class="fas fa-user-shield"></i>  Privacy Policy</a>
+				</li>
+				<li class="nav-item">
+					<a href="contact.html" class="nav-link text-white btn-outline-info"><i class="fas fa-file-signature"></i>  Contact</a>
+				</li>
+			</ul><hr>
+		</div>
+	</div>
+
+	<!-- Footer End -->
+
+</body>
+</html>
