@@ -3,7 +3,7 @@
       @extends('partials.master')
 
       @section('content')
-      <hr>
+      <hr style="border-color: mediumseagreen;">
 </div>
         <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-12"></div>
@@ -26,11 +26,17 @@
                     <label for="exampleInputPassword1" class="text-success">Password</label>
                     <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
                   </div>
-                  <div class="checkbox">
-                    <label class="text-success">
-                      <input name="rememberme" type="checkbox"> Remember Me
-                    </label>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="checkbox">
+                        <label class="text-success"><input name="rememberme" type="checkbox"> Remember Me</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <a href="/resetpasswordS" class="text-success">Forgot password</a>
+                    </div>
                   </div>
+
                   <button type="submit" class="btn btn-success btn-block">Submit</button>
                 </form>
             </div>

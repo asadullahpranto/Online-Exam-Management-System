@@ -3,7 +3,7 @@
       @extends('partials.master')
 
       @section('content')
-      <hr style="border-color: mediumseagreen;">
+      <hr>
 </div>
         <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-12"></div>
@@ -17,23 +17,13 @@
                     @csrf
                     <h2 class="text-success text-uppercase text-center"><img class="pb-2 pr-2" src="{{asset('icon/icon.png')}}" style="height: 40px;">Teacher Login</h2>
                   <div class="form-group">
-                    <label for="exampleInputEmail1" class="text-success">Email</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+                    <label for="exampleInputEmail1" class="text-success">New Password</label>
+                    <input type="password" name="password1" class="form-control" id="exampleInputEmail1" placeholder="New Password" required>
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1" class="text-success">Password</label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-                  </div>
-                  <div class="row">
-                    <div class="col-6">
-                      <div class="checkbox">
-                        <label class="text-success"><input name="rememberme" type="checkbox"> Remember Me</label>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <a href="/resetpasswordT" class="text-success">Forgot password</a>
-                    </div>
-                  </div>
+                    <label for="exampleInputPassword1" class="text-success">Confirm Password</label>
+                    <input type="password" name="password2" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password" required>
+                  </div><br>
                   <button type="submit" class="btn btn-success btn-block">Submit</button>
                 </form>
             </div>

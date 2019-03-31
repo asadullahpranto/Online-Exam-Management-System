@@ -17,7 +17,6 @@
 });*/
 
 
-
 Route::get('/homepage','myController@homepage')->name('homepage')->middleware('guest');
 Route::get('/about','myController@about')->name('about');
 
@@ -143,4 +142,16 @@ Route::post('/updatequestion/{q}','MyController@updatequestion')->middleware('au
 
 Route::get('/editexamdetail/{e}','MyController@editexamdetail')->middleware('auth:teachers');
 Route::post('/updateexamdetail/{e}','MyController@updateexamdetail')->middleware('auth:teachers');
-  Route::get('/deleteexamdetail/{e}','MyController@deleteexamdetail')->middleware('auth:teachers');
+Route::get('/deleteexamdetail/{e}','MyController@deleteexamdetail')->middleware('auth:teachers');
+
+Route::get('/resetpasswordT','MyController@resetpasswordT');
+Route::get('/confirmpasswordT','MyController@confirmpasswordT');
+
+Route::get('/resetpasswordS','MyController@resetpasswordS');
+Route::get('/confirmpasswordS','MyController@confirmpasswordS');
+Route::post('/fpt','Fpt@sendResetLinkEmail');
+Route::post('/fps','Fps@sendResetLinkEmail');
+
+Route::get('password/reset/{token}','Rps@showResetForm');
+Route::get('password/reset/','Rps@showResetForm');
+Route::post('password/reset','Rps@reset')->name('password.reset');

@@ -631,4 +631,22 @@ class myController extends Controller
       return redirect('/examlistTeacher');
     }
 
+    public function resetpasswordT()
+    {
+      return view('resetpasswordT');
+    }
+    public function confirmpasswordT()
+    {
+      return view('confirmpasswordT');
+    }
+
+    public function resetpasswordS()
+    {
+      return view('resetpasswordS');
+    }
+    public function confirmpasswordS()
+    {
+      return view('confirmpasswordS');
+    }
+
 }
