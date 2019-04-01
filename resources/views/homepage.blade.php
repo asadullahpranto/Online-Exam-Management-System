@@ -134,11 +134,11 @@
                         $es = \App\Relation\ExamDetail::latest()->take(4)->get();
                    ?>
                     @foreach($es as $e)
-                    <div class="col-sm-11 col-md-6 col-lg-6 mt-3">
+                    <div class="col-sm-11 col-md-6 col-lg-6 mt-1 mb-3">
                         <div class="card-deck">
                             <!--Upcoming Exam Cards-->
                             <div class="card " style="width: 15rem; background-color: #26a69a;">
-                                <img class="card-img-top ml-5" src="{{asset('icon/icon.png')}}" style="height: 100px; width: 100px;" alt="Card image cap">
+                                <img class="card-img-top ml-5" src="{{asset('icon/icon.png')}}" style="height: 60px; width: 60px;" alt="Card image cap">
                                 <div class="card-body">
                                     <h6 class="card-title text-uppercase">Exam title: <span style="color: #e0f2f1;">{{$e->examtitle}}</span></h6>
                                     <ul>
@@ -146,7 +146,10 @@
                                         <li class="card-text">Exam time: {{$e->examtime}}</li>
                                         <li class="card-text">Total marks: {{$e->marks}}</li>
                                     </ul>
-                                    <p id="demo{{$i++}}"></p>
+                                    <div class="row ml-auto">
+                                      <div class="text center mr-2">COUNTDOWN: <span> </span> </div>
+                                      <h5 class="text- text-center" style="color: #bf360c;" id="demo{{$i++}}"></h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -216,7 +219,7 @@
         </div>
     </div>
 
-    <div class="container my-4 ">
+    <div class="container mb-2 ">
         <hr style="border-color: mediumseagreen;">
         <div class="footer">
             <ul class="nav nav-pills nav-fill bg-success rounded">
@@ -263,7 +266,7 @@
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("demo1").innerHTML = "EXPIRED";
+            document.getElementById("demo1").innerHTML = "FINISHED";
         }
     }, 1000);
 </script>
@@ -293,7 +296,7 @@
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("demo2").innerHTML = "EXPIRED";
+            document.getElementById("demo2").innerHTML = "FINISHED";
         }
     }, 1000);
 </script>
@@ -323,7 +326,7 @@
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("demo3").innerHTML = "EXPIRED";
+            document.getElementById("demo3").innerHTML = "FINISHED";
         }
     }, 1000);
 </script>
@@ -354,7 +357,7 @@
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("demo4").innerHTML = "EXPIRED";
+            document.getElementById("demo4").innerHTML = "FINISHED";
         }
     }, 1000);
 </script>

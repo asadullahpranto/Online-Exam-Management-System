@@ -154,15 +154,19 @@
       </div>
 
       <div class="col-9 col-sm-7  col-xs-6 col-md-9 rounded-right" style="background-color: #cfd8dc;">
-<p id="demo"></p>
         <div class="mt-3">
           <p class="text-primary">Home / <span class="text-white">Exam</p>
           <hr>
         </div>
 
+				<div class="">
+					<h5><div class="text-center">COUNTDOWN:<span class="ml-2" style="color: #bf360c;" id="demo"></span> </div></h5>
+				</div>
+
         <div class="">
           <form class="" action="/view_result/{{$e->id}}" method="post">
             @csrf
+
             <h4 class="text-uppercase text-center my-3 text-info">Exam Title: {{$e->examtitle}}</h4>
             <div class="row">
               <div class="col-md-4 col-lg-4">

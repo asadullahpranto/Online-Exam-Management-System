@@ -20,7 +20,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="examlistTeacher" class="nav-link btn-outline-info rounded text-white pr-3">EXAM LIST</a>
+        <a href="/examlistTeacher" class="nav-link btn-outline-info rounded text-white pr-3">EXAM LIST</a>
       </li>
 
       <li class="nav-item">
