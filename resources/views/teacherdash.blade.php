@@ -90,18 +90,6 @@
 
 					<div class="card-deck mt-3 mb-3">
 
-						<div class="card text-white mb-4 mx-5" style="max-width: 18rem; background-color: #e57373;">
-							<div class="card-header text-right">EXPORT AS PDF</div>
-
-							<div class="card-body bg-info">
-								<ul class="list-group list-group-flush">
-									<li class="list-group-item bg-info"><a href="/exportquestion" class="text-white text-uppercase">Export Question</a></li>
-									<li class="list-group-item bg-info"><a href="{{route('export')}}" class="text-white text-uppercase">Export Result</a></li>
-								</ul>
-
-							</div>
-						</div>
-
 						<div class="card text-white mb-4 mx-5" style="max-width: 18rem; background-color: #4caf50;">
 							<div class="card-header text-right">IMPORT QUESTION</div>
 
@@ -112,6 +100,19 @@
 
 							</div>
 						</div>
+
+						<div class="card text-white mb-4 mx-5" style="max-width: 18rem; background-color: #e57373;">
+							<div class="card-header text-right">EXPORT AS PDF</div>
+
+							<div class="card-body bg-info">
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item bg-info"><a href="/exportquestion" class="text-white text-uppercase">Export Question</a></li>
+									<li class="list-group-item bg-info"><a href="{{route('studentno')}}" class="text-white text-uppercase">Export Result</a></li>
+								</ul>
+
+							</div>
+						</div>
+
 
 					</div>
 				</div>

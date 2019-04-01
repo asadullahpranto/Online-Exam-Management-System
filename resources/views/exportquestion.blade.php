@@ -1,7 +1,8 @@
 
-@extends('teacher.master')
+	@extends('teacher.master')
 
-@section('content')
+	@section('content')
+
 
 		<!-- Navbar End Hare -->
 
@@ -39,10 +40,10 @@
 							<a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fas fa-download"></i> EXPORT IMPORT</a>
 
 							<ul class="dropdown-menu bg-success">
-								<li class="dropdown-item"><a href="/exportquestion" class="dropdown-link text-white" style="text-decoration: none;">Export Question</a></li>
-								<li class="dropdown-item"><a href="{{route('export')}}" class="dropdown-link text-white" style="text-decoration: none;">Export Result</a></li>
-								<li class="dropdown-item"><a href="{{route('import')}}" class="dropdown-link text-white" style="text-decoration: none;">Import Exam</a></li>
-							</ul>
+			          <li class="dropdown-item"><a href="/exportquestion" class="dropdown-link text-white" style="text-decoration: none;">Export Question</a></li>
+			          <li class="dropdown-item"><a href="{{route('export')}}" class="dropdown-link text-white" style="text-decoration: none;">Export Result</a></li>
+			          <li class="dropdown-item"><a href="{{route('import')}}" class="dropdown-link text-white" style="text-decoration: none;">Import Exam</a></li>
+			        </ul>
 						</li>
 					</ul>
 				</div>
@@ -55,13 +56,12 @@
 				<div class="col-9 col-sm-7  col-xs-6 col-md-9 rounded-right" style="background-color: #cfd8dc;">
 
 					<div class="mt-3">
-						<h6 class="text-primary">Home / <span class="text-white">Export</h6>
+						<h6 class="text-primary">Home / <span class="text-white">Exam List</h6>
 						<hr>
 					</div>
 
 					<div>
-						<h3 class="text-info mb-3">Export Student List</h3>
-						<hr>
+						<h3 class="text-info mb-3">Exam Lists</h3>
 					</div>
 
 					<!--Table -->
@@ -74,20 +74,27 @@
 								<th>Date</th>
 								<th>Time</th>
 								<th>Marks</th>
-								<th>Download</th>
+								<th>View</th>
+
 							</tr>
 						</thead>
 
 						<tbody>
+							@php $i=1 @endphp
+							@foreach($es as $e)
 							<tr>
-								<td scope="row">1</td>
-								<td>CSE-501</td>
-								<td>2-03-19</td>
-								<td>40m</td>
-								<td>50</td>
+								<td scope="row">{{$i}}</td>
+								<td>{{$e->examtitle}}</td>
+								<td>{{$e->examdate}}</td>
+								<td>{{$e->examtime}}</td>
+								<td>{{$e->marks}}</td>
+								<td><a href="/exportquestionview/{{$e->id}}">view</a></td>
+
 							</tr>
+							@php $i++ @endphp
+							@endforeach
 						</tbody>
-					</table><hr><br><br><br><br><br><br><br>
+					</table><hr><br><br><br>
 
 
 				</div>

@@ -155,3 +155,6 @@ Route::post('/fps','Fps@sendResetLinkEmail');
 Route::get('password/reset/{token}','Rps@showResetForm');
 Route::get('password/reset/','Rps@showResetForm');
 Route::post('password/reset','Rps@reset')->name('password.reset');
+
+Route::get('exportquestion','myController@exportquestion')->middleware('auth:teachers');
+Route::get('/exportquestionview/{e}','myController@exportquestionview')->middleware('auth:teachers');

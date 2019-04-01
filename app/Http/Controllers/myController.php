@@ -648,5 +648,14 @@ class myController extends Controller
     {
       return view('confirmpasswordS');
     }
+    public function exportquestion()
+    {
+      return view('exportquestion')->with(['es'=>\Auth::guard('teachers')->user()->exam_details]);
+    }
+
+    public function exportquestionview(\App\Relation\ExamDetail $e)
+    {
+      return view('exportquestionview')->with(['qs'=>$e->questions,'e'=>$e]);
+    }
 
 }
