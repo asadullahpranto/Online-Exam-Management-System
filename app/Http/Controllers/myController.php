@@ -658,4 +658,24 @@ class myController extends Controller
       return view('exportquestionview')->with(['qs'=>$e->questions,'e'=>$e]);
     }
 
+    public function addquestion(\App\Relation\ExamDetail $e)
+    {
+      return view('addquestion')->with(['e'=>$e]);
+    }
+    public function addquestionPost(Request $request,\App\Relation\ExamDetail $e)
+    {
+      $q = new \App\Relation\Question;
+      $q->question = $request->question;
+      $q->a = $request->option_a;
+      $q->b = $request->option_b;
+      $q->c = $request->option_c;
+      $q->d = $request->option_d;
+      $q->answer = $request->answer;
+      $q->exam_detail_id = $e->id;
+      $q->save();
+
+
+      return redirect('/questions/'.$e->id);
+    }
+
 }

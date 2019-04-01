@@ -89,18 +89,24 @@
 
       <div class="row mb-3 my-2">
         <div class="col-5 ml-5">C. {{ $q->c }}</div>
-        <div class="col-5">D. {{ $q->d }}</div><br>
+        <div class="col-5">D. {{ $q->d }}</div>
       </div>
-      <div style="float: right;">
+      <div style="float: right">
         <div class="btn btn-outline-info btn-sm mr-1">
           <a href="/editquestion/{{$q->id}}"  style="text-decoration: none;">Edit</a>
         </div>
         <div class="btn btn-outline-info btn-sm">
           <a href="/deletequestion/{{$q->id}}"  style="text-decoration: none;">Delete</a>
         </div>
-      </div><br><br>
+      </div>
+      <div class="clearfix">
+
+      </div>
       @endforeach
-    </div><br><br>
+      <div class="text-center">
+        <button type="submit" class="btn btn-outline-info btn-sx mr-2 mb-5 mt-3" style="width: 150px;"><a href="/addquestion/{{$e->id}}" class="btn-sm"  style="text-decoration: none;">Add Question</a></button>
+      </div>
+    </div><br>
 
   </div>
 </div>

@@ -158,3 +158,6 @@ Route::post('password/reset','Rps@reset')->name('password.reset');
 
 Route::get('exportquestion','myController@exportquestion')->middleware('auth:teachers');
 Route::get('/exportquestionview/{e}','myController@exportquestionview')->middleware('auth:teachers');
+
+Route::get('addquestion/{e}','myController@addquestion')->middleware('auth:teachers');
+Route::post('addquestion/{e}','myController@addquestionPost')->middleware('auth:teachers');
