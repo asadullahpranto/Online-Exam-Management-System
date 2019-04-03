@@ -198,7 +198,9 @@
       </div>
       @endforeach
     </div><br>
-    <button id="cmd" class="btn btn-danger">TO PDF</button><br><hr>
+    <div class="text-center">
+    	<button id="cmd" class="btn btn-info">DOWNLOAD AS PDF</button>
+    </div> <br><hr>
 
   </div>
 </div>
@@ -236,7 +238,7 @@
     $("#example").tableHTMLExport({type:'csv',filename:'sample.csv'});
   })
   $('#pdf').on('click',function(){
-    $("#example").tableHTMLExport({type:'pdf',filename:'sample.pdf'});
+    $("#example").tableHTMLExport({type:'pdf',filename:'exam-question.pdf'});
   })
   </script>
   <script>
@@ -252,7 +254,7 @@ $('#cmd').click(function () {
       'width': 170,
           'elementHandlers': specialElementHandlers
   });
-  doc.save('sample-file.pdf');
+  doc.save('exam-question.pdf');
 });
   </script>
 

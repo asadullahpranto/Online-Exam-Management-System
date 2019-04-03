@@ -531,6 +531,10 @@ class myController extends Controller
       $result->exam_detail_id = $exam_detail->id;
       if($time<$exam_ends) {
         //dd($time);
+        $rs = \App\Relation\Result::where('student_id', \Auth::guard('students')->id())->where('exam_detail_id'
+        , $exam_detail->id)->exist();
+
+        if(!$rs)
         $result->save();
       }
 

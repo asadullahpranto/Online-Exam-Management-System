@@ -261,10 +261,14 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the result in the element with id="demo"
-        document.getElementById("demo1").innerHTML =  hours + "h " + minutes + "m " + seconds + "s ";
+        document.getElementById("demo1").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
         // If the count down is finished, write some text
-        if (distance < 0) {
+        if({{$es[0]->ends}}*1000<now && {{$es[0]->starts}}*1000<now){
+          document.getElementById("demo1").innerHTML = "RUNNING";
+        }
+
+        else if (distance < 0) {
             clearInterval(x);
             document.getElementById("demo1").innerHTML = "FINISHED";
         }
@@ -291,10 +295,13 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the result in the element with id="demo"
-        document.getElementById("demo2").innerHTML =  hours + "h " + minutes + "m " + seconds + "s ";
+        document.getElementById("demo2").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
+        if({{$es[1]->ends}}*1000>now && {{$es[1]->starts}}*1000<now){
+          document.getElementById("demo2").innerHTML = "RUNNING";
+        }
         // If the count down is finished, write some text
-        if (distance < 0) {
+        else if (distance < 0) {
             clearInterval(x);
             document.getElementById("demo2").innerHTML = "FINISHED";
         }
@@ -321,10 +328,13 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the result in the element with id="demo"
-        document.getElementById("demo3").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+        document.getElementById("demo3").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
+        if({{$es[2]->ends}}*1000>now && {{$es[2]->starts}}*1000<now){
+          document.getElementById("demo3").innerHTML = "RUNNING";
+        }
         // If the count down is finished, write some text
-        if (distance < 0) {
+        else if (distance < 0) {
             clearInterval(x);
             document.getElementById("demo3").innerHTML = "FINISHED";
         }
@@ -352,10 +362,13 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the result in the element with id="demo"
-        document.getElementById("demo4").innerHTML =  hours + "h " + minutes + "m " + seconds + "s ";
+        document.getElementById("demo4").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
+        if({{$es[3]->ends}}*1000>now && {{$es[3]->starts}}*1000<now){
+          document.getElementById("demo4").innerHTML = "RUNNING";
+        }
         // If the count down is finished, write some text
-        if (distance < 0) {
+        else if (distance < 0) {
             clearInterval(x);
             document.getElementById("demo4").innerHTML = "FINISHED";
         }

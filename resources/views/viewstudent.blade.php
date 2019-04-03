@@ -243,7 +243,7 @@
      $("#example").tableHTMLExport({type:'csv',filename:'sample.csv'});
    })
    $('#pdf').on('click',function(){
-     $("#example").tableHTMLExport({type:'pdf',filename:'sample.pdf'});
+     $("#example").tableHTMLExport({type:'pdf',filename:'student-list.pdf'});
    })
    </script>
 
