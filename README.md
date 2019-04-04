@@ -2,9 +2,9 @@
 
 # Key Features:
 
-There are two Registration option:
-    1. One for Teacher.
-    2. Another for Student
+There are two Registration option:\
+    1. One for Teacher.\
+    2. Another for Student.\
  
 After successful registration you can login:
 
