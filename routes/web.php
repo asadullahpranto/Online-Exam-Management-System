@@ -46,25 +46,25 @@ Route::get('/settings','myController@settings')->name('settings');
 Route::post('/logout','myController@logout')->name('logout');
 
 Route::get('/teacherdash','myController@teacherdash')->name('teacherdash')->middleware('auth:teachers');
-Route::get('/studentno','myController@studentno')->name('studentno');
+Route::get('/studentno','myController@studentno')->name('studentno')->middleware('auth:teachers');
 
 Route::get('/examlistTeacher','myController@examlistTeacher')->name('examlistTeacher');
-Route::get('/examname','myController@examname')->name('examname');
+Route::get('/examname','myController@examname')->name('examname')->middleware('auth:teachers');
 
-Route::post('/exam-name','myController@examDetailInformation')->name('exam-name');
+Route::post('/exam-name','myController@examDetailInformation')->name('exam-name')->middleware('auth:teachers');
 
-Route::get('/examtrash','myController@examtrash')->name('examtrash');
+Route::get('/examtrash','myController@examtrash')->name('examtrash')->middleware('auth:teachers');
 
 Route::get('/studentDash','myController@studentDash')->name('studentDash')->middleware('auth:students');
-Route::get('/examlist','myController@examlist')->name('examlist');
+Route::get('/examlist','myController@examlist')->name('examlist')->middleware('auth:students');
 
-Route::get('/examresult','myController@examresult')->name('examresult');
-Route::get('/homeworklist','myController@homeworklist')->name('homeworklist');
-Route::get('/homeworkresult','myController@homeworkresult')->name('homeworkresult');
+Route::get('/examresult','myController@examresult')->name('examresult')->middleware('auth:students');
+Route::get('/homeworklist','myController@homeworklist')->name('homeworklist')->middleware('auth:students');
+Route::get('/homeworkresult','myController@homeworkresult')->name('homeworkresult')->middleware('auth:students');
 
-Route::get('/coursewisestudentlist','myController@coursewisestudentlist')->name('coursewisestudentlist');
-Route::get('/overollstudentlist','myController@overollstudentlist')->name('overollstudentlist');
-Route::get('/rankcoursewise','myController@rankcoursewise')->name('rankcoursewise');
+Route::get('/coursewisestudentlist','myController@coursewisestudentlist')->name('coursewisestudentlist')->middleware('auth:teachers');
+Route::get('/overollstudentlist','myController@overollstudentlist')->name('overollstudentlist')->middleware('auth:teachers');
+Route::get('/rankcoursewise','myController@rankcoursewise')->name('rankcoursewise')->middleware('auth:teachers');
 // Route::get('/rankoverall','myController@rankoverall')->name('rankoverall');
 
 Route::get('/teacherLogin','myController@teacherLogin')->name('teacherLogin')->middleware('guest');
@@ -73,8 +73,8 @@ Route::post('/teacher-login','myController@teacherLoginPost')->name('teacher-log
 Route::get('/studentLogin','myController@studentLogin')->name('studentLogin')->middleware('guest');
 Route::post('/student-login','myController@studentLoginPost')->name('student-login')->middleware('guest');
 
-Route::get('/import','myController@import')->name('import');
-Route::get('/export','myController@export')->name('export');
+Route::get('/import','myController@import')->name('import')->middleware('auth:teachers');
+Route::get('/export','myController@export')->name('export')->middleware('auth:teachers');
 
 Route::get('/createexam','myController@createexam')->name('createexam')->middleware('auth:teachers');
 Route::post('/create-exam','myController@createexamInformation')->name('create-exam')->middleware('auth:teachers');
@@ -91,15 +91,15 @@ Route::get('/previous-exam','myController@previousHome')->name('previousHome');
 Route::get('/about-home','myController@aboutHome')->name('aboutHome');
 
 
-Route::get('/developer-t','myController@dt')->name('dt');
-Route::get('/copyright-t','myController@ct')->name('ct');
-Route::get('/privacy-policy-t','myController@ppt')->name('ppt');
-Route::get('/contact-t','myController@cot')->name('cot');
+Route::get('/developer-t','myController@dt')->name('dt')->middleware('auth:teachers');
+Route::get('/copyright-t','myController@ct')->name('ct')->middleware('auth:teachers');
+Route::get('/privacy-policy-t','myController@ppt')->name('ppt')->middleware('auth:teachers');
+Route::get('/contact-t','myController@cot')->name('cot')->middleware('auth:teachers');
 
-Route::get('/developer-s','myController@ds')->name('ds');
-Route::get('/copyright-s','myController@cs')->name('cs');
-Route::get('/privacy-policy-s','myController@pps')->name('pps');
-Route::get('/contact-s','myController@cos')->name('cos');
+Route::get('/developer-s','myController@ds')->name('ds')->middleware('auth:students');
+Route::get('/copyright-s','myController@cs')->name('cs')->middleware('auth:students');
+Route::get('/privacy-policy-s','myController@pps')->name('pps')->middleware('auth:students');
+Route::get('/contact-s','myController@cos')->name('cos')->middleware('auth:students');
 
 Route::get('/questions','myController@questions')->name('questions')->middleware('auth:teachers');
 // Route::get('/loginfirst','myController@loginfirst')->name('loginfirst');

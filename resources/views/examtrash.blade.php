@@ -34,7 +34,7 @@
 								<li class="dropdown-item"><a href="/examlistforrank" class="dropdown-link text-white" style="text-decoration: none;">Student Rank</a></li>
 							</ul>
 						</li><hr style="border-color: white;">
-						
+
 						<li>
 							<a href="#" class="text-white dropdown-toggle" data-toggle="dropdown" rule="button" style="text-decoration: none;"><i class="fas fa-download"></i> EXPORT IMPORT</a>
 
@@ -84,14 +84,14 @@
 								<td>50</td>
 							</tr>
 							<tr>
-								<th scope="row">2</th>
+								<td scope="row">2</td>
 								<td>CSE-502</td>
 								<td>3-05-19</td>
 								<td>40m</td>
 								<td>70</td>
 							</tr>
 							<tr>
-								<th scope="row">3</th>
+								<td scope="row">3</td>
 								<td>CSE-501</td>
 								<td>2-03-19</td>
 								<td>30m</td>

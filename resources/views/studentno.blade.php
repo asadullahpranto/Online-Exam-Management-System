@@ -41,7 +41,7 @@
 
 							<ul class="dropdown-menu bg-success">
 			          <li class="dropdown-item"><a href="/exportquestion" class="dropdown-link text-white" style="text-decoration: none;">Export Question</a></li>
-			          <li class="dropdown-item"><a href="{{route('export')}}" class="dropdown-link text-white" style="text-decoration: none;">Export Result</a></li>
+			          <li class="dropdown-item"><a href="{{route('studentno')}}" class="dropdown-link text-white" style="text-decoration: none;">Export Result</a></li>
 			          <li class="dropdown-item"><a href="{{route('import')}}" class="dropdown-link text-white" style="text-decoration: none;">Import Exam</a></li>
 			        </ul>
 						</li>
@@ -73,7 +73,7 @@
 								<th>Exam Title</th>
 								<th>Exam Date</th>
 								<th>Exam Time</th>
-								<th>View Student</th>
+								<th>Student List</th>
 							</tr>
 						</thead>
 
@@ -86,7 +86,7 @@
 								<td>{{$e->examdate}}</td>
 								<td>{{$e->examtime}}</td>
 								<td>
-									<a href="/viewstudent/{{$e->id}}">view</a>
+									<a href="/viewstudent/{{$e->id}}">view to export</a>
 								</td>
 							</tr>
 							@php $i++ @endphp
