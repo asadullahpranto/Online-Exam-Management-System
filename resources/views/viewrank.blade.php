@@ -48,8 +48,8 @@
 								<th>No.</th>
 								<th>Name</th>
 								<th>Reg. No</th>
+								<th>Dept.</th>
 								<th>Score</th>
-								<th>Percentage</th>
 							</tr>
 						</thead>
 
@@ -60,14 +60,8 @@
 	              <td>{{$i}}</td>
 	              <td>{{$r->student->name}}</td>
 	              <td>{{$r->student->registration}}</td>
-	              <td>{{$r->score}}</td>
-								@if($r->marks)
-								<td>{{(($r->score)*100)/($r->marks)}}%</td>
-								@endif
-								@if(!$r->marks)
-
-								<td>{{$r->score}}%</td>
-								@endif
+								<td>{{$r->student->department}}</td>
+								<td>{{$r->score}}</td>
 	            </tr>
 							@php $i++ @endphp
 	            @endforeach

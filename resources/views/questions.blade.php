@@ -91,6 +91,9 @@
         <div class="col-5 ml-5">C. {{ $q->c }}</div>
         <div class="col-5">D. {{ $q->d }}</div>
       </div>
+      <div>
+        <div class="ml-5">Answer: {{ $q->answer }}</div>
+      </div>
       <div style="float: right">
         <div class="btn btn-outline-info btn-sm mr-1">
           <a href="/editquestion/{{$q->id}}"  style="text-decoration: none;">Edit</a>
