@@ -1,4 +1,4 @@
-![GitHub Logo](/images/Teacher Login.png)
+![](images/homepage.PNG)
 
 # # OnlineExamManagementSystem
 
