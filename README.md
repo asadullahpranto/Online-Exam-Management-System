@@ -1,4 +1,4 @@
-![](images/homepage.PNG)
+![Homepage](images/homepage.PNG)
 
 # # OnlineExamManagementSystem
 
