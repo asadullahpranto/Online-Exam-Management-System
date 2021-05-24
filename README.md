@@ -1,27 +1,43 @@
-# Homepage
+# Online Exam Management System
+## Homepage
 ![Homepage](images/homepage.PNG)
 
-# OnlineExamManagementSystem
+## Key Features:
 
-# Key Features:
-
-## There are two Registration option:\
-    ### 1. One for Teacher.\
-    ### 2. Another for Student.
+### There are two Registration option:
+    #### 1. One for Teacher.
+    #### 2. Another for Student.
     
-## Teacher Registration
-### Step-1:
+### Teacher Registration
+#### Step-1:
 ![Homepage](images/Registration%20Option.PNG)
-### Step-2: 
+#### Step-2: 
 ![Homepage](images/Teacher%20Registration.PNG)
  
 After successful registration you can login:
 
-Login As A teacher:\
-    1. You can host any exam(as a teacher)\
-    2. You can Update or delete any exam or question\
-    3. You can download total participated student list along with their rank/score(.pdf)\
-    4. You can download Question paper as PDF(.pdf)
+### Login As A teacher:
+    ![Homepage](images/Teacher%20Login.PNG)
+    
+    ### Dashboard
+    ![Homepage](images/Teacher%20Dashboard-1.PNG)
+    ![Homepage](images/Teacher%20Dashboard-2.PNG)
+    
+    #### 1. You can host any exam(as a teacher)
+    ![Homepage](images/Setting%20Exam.PNG)
+    ![Homepage](images/Inserting%20Questions.PNG)
+    
+    #### 2. You can Update or delete any exam or question
+    ![Homepage](images/Add%20or%20Edit.PNG)
+    
+    #### 3. You can download total participated student list along with their rank/score(.pdf)
+    ![Homepage](images/Result-1.PNG)
+    ![Homepage](images/Result-2.PNG)
+    ![Homepage](images/Exam%20lists.PNG)
+    ![Homepage](images/Exam%20info.PNG)
+    
+    #### 4. You can download Question paper as PDF(.pdf)
+    ![Homepage](images/Teacher%20Login.PNG)
     
 Login As a student:\
     1. You can see all exams(upcoming, ongoing, previous) hosted by any teacher\
