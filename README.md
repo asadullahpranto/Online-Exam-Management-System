@@ -14,7 +14,7 @@
 #### Step-2: 
 ![Homepage](images/Teacher%20Registration.PNG)
  
-After successful registration you can login:
+### After successful registration you can login:
 
 ### Login As A teacher:
    ![Homepage](images/Teacher%20Login.PNG)
@@ -33,16 +33,35 @@ After successful registration you can login:
    #### 3. You can download total participated student list along with their rank/score(.pdf)
    ![Homepage](images/Result-1.PNG)
    ![Homepage](images/Result-2.PNG)
+   ![Homepage](images/Accuracy.PNG)
    ![Homepage](images/Exam%20lists.PNG)
    ![Homepage](images/Exam%20info.PNG)
     
    #### 4. You can download Question paper as PDF(.pdf)
-   ![Homepage](images/Teacher%20Login.PNG)
-    
-Login As a student:\
-    1. You can see all exams(upcoming, ongoing, previous) hosted by any teacher\
-    2. You can parcipate in previous and ongoing exam.\
-        ---- Your score will be saved only for ongoing exam.\
-        ---- Otherwise your score will not be updated, but you can see your current given exam result in the console\
-    3. You can see the student list who participated for the exam along with their score.\
-    4. you can see the homework list and homework result.
+
+### Student Registration
+![Homepage](images/Student%20Registration.PNG)
+ 
+### After successful registration you can login:
+
+### Login As a Student
+   ![Homepage](images/Student%20Login.PNG)
+   
+   #### 1. You can see all exams(upcoming, ongoing, previous) hosted by any teacher\
+   ![Homepage](images/Student%20Dashboard.PNG)
+   ![Homepage](images/Student%20Dashboard-2.PNG)
+   
+   #### 2. You can parcipate in previous and ongoing exam.
+   ![Homepage](images/Live%20Exams.PNG)
+   
+   ##### Your score will be saved only for ongoing exam. Otherwise your score will not be updated, but you can see your current given exam result in the console.
+   ![Homepage](images/Exam%20Question.PNG)
+   ![Homepage](images/Exam%20Status.PNG)
+   
+   #### 3. You can see the student list who participated for the exam along with their score.\
+   ![Homepage](images/Student%20Ranks.PNG)
+   
+   #### 4. you can see the homework list and homework result.
+   
+## Database Schemas
+  ![Homepage](images/Database%20schema.PNG)
