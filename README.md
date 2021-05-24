@@ -1,12 +1,19 @@
+# Homepage
 ![Homepage](images/homepage.PNG)
 
-# # OnlineExamManagementSystem
+# OnlineExamManagementSystem
 
 # Key Features:
 
-There are two Registration option:\
-    1. One for Teacher.\
-    2. Another for Student.
+## There are two Registration option:\
+    ### 1. One for Teacher.\
+    ### 2. Another for Student.
+    
+## Teacher Registration
+### Step-1:
+![Homepage](images/Registration%20Option.PNG)
+### Step-2: 
+![Homepage](images/Teacher%20Registration.PNG)
  
 After successful registration you can login:
 
